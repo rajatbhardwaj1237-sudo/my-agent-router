@@ -1,10 +1,5 @@
 # Agent Router
 
-[![CI](https://github.com/mizcausevic-dev/agent-router/actions/workflows/ci.yml/badge.svg)](https://github.com/mizcausevic-dev/agent-router/actions/workflows/ci.yml)
-[![Node](https://img.shields.io/badge/node-20%2B-339933?logo=node.js&logoColor=white)](https://nodejs.org)
-[![TypeScript](https://img.shields.io/badge/typescript-5.6-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![License: MIT](https://img.shields.io/badge/license-MIT-66FCF1)](LICENSE)
-
 Multi-model routing layer for LLM workloads. Capability-aware routing, cost/latency optimization, fallback chains with cross-provider diversity, circuit breakers, sticky-session tenancy, and live routing telemetry.
 
 > Recruiter takeaway:
@@ -16,22 +11,6 @@ Multi-model routing layer for LLM workloads. Capability-aware routing, cost/late
 Every AI team that ships at scale eventually builds a routing layer — it always starts as `if/else` matching prompt to model, evolves into a Slack channel of "Anthropic is down, switch to OpenAI," and ends as a tangled production fire. The routing layer is doing too many jobs: capability matching, cost optimization, latency caps, circuit breaking, fallback ordering, telemetry. Most teams build half of these and call it a day.
 
 This repo is the version where all of those concerns are first-class, testable, and composable. Capability filter → score against optimization preference → check circuit-breaker availability → build cross-provider fallback chain → emit telemetry. The routing decision becomes a contract, not a prayer.
-
-## Where This Sits in the Portfolio
-
-| Repo | Surface | Question it answers |
-|---|---|---|
-| [`mcp-sentinel`](https://github.com/mizcausevic-dev/mcp-sentinel) | Tool calls | What MCP tools are exposed and how risky? |
-| [`rag-sentinel`](https://github.com/mizcausevic-dev/rag-sentinel) | Retrieval | What's in the vector store and how trustworthy? |
-| [`agent-codex`](https://github.com/mizcausevic-dev/agent-codex) | Decisions | Under what policies are decisions allowed? |
-| [`agent-eval-arena`](https://github.com/mizcausevic-dev/agent-eval-arena) | Pre-prod | Should this model promotion ship? |
-| **`agent-router`** | **Runtime routing** | ***Which model does this request actually hit?*** |
-| [`agentobserve`](https://github.com/mizcausevic-dev/agentobserve) | Runtime | What did agents actually do? |
-| [`shadow-ai-detector`](https://github.com/mizcausevic-dev/shadow-ai-detector) | Egress | Who's leaking what to whom? |
-| [`ai-finops-radar`](https://github.com/mizcausevic-dev/ai-finops-radar) | Finance | Are we on budget — and why not? |
-| [`kinetic-flightdeck`](https://github.com/mizcausevic-dev/kinetic-flightdeck) | Operator | Are we OK right now? |
-
-This is the only repo in the portfolio that's **actively serving requests** — everything else reports, evaluates, or governs. This decides.
 
 ## Five Capabilities
 
@@ -225,10 +204,8 @@ npm test
 
 ## Portfolio Links
 
-- [LinkedIn](https://www.linkedin.com/in/mizcausevic/)
-- [Skills Page](https://mizcausevic.com/skills)
-- [Medium](https://medium.com/@mizcausevic)
-- [GitHub](https://github.com/mizcausevic-dev)
+- [LinkedIn](https://www.linkedin.com/in/rajat-bhardwaj-6b6226256/)
+- [GitHub](https://github.com/rajatbhardwaj1237-sudo)
 
 Part of [mizcausevic-dev's GitHub portfolio](https://github.com/mizcausevic-dev) — AI Platform Engineering doctrine.
 
